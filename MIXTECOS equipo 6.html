@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<div style="position: absolute; top: 10px; right: 10px; z-index: 1000;">
+        <a href="https://zapotecas.github.io/" target="_blank" style="margin-left: 15px; text-decoration: none; color: blue; font-weight: bold;">Los Zapotecas</a>
+        <a href="URL_DEL_SEGUNDO_LINK" target="_blank" style="margin-left: 15px; text-decoration: none; color: blue; font-weight: bold;">Oaxaca</a>
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cultura Mixteca: Un Viaje al Corazón de Oaxaca</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E8D3C0; /* Beige claro */
+            color: #2E4057; /* Azul oscuro principal */
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #2E4057; /* Azul oscuro */
+            color: #fff;
+            padding: 40px 20px 0; /* Padding inferior ajustado por la barra de equipo */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: #F0B46A; /* Naranja-dorado para el título principal */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 20px; /* Margen inferior para separar de la barra de equipo */
+            color: #7CA0A0; /* Azul grisáceo claro */
+        }
+
+        /* Barra de información del equipo */
+        .team-info-bar {
+            background-color: #4A6E7D; /* Verde azulado */
+            color: #fff;
+            padding: 10px 0;
+            overflow: hidden; /* Oculta el contenido fuera del flujo */
+            position: relative;
+            white-space: nowrap; /* Asegura que el texto esté en una sola línea */
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .team-info-bar span {
+            display: inline-block;
+            padding-left: 100%; /* Inicia el texto fuera de la vista a la derecha */
+            animation: scroll-left 25s linear infinite; /* Animación de desplazamiento */
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+
+
+        /* Menú de navegación */
+        nav {
+            background-color: #A8765D; /* Marrón-rojizo */
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #2E4057; /* Azul oscuro al pasar el mouse */
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'Merriweather', serif;
+            color: #2E4057; /* Azul oscuro */
+            border-bottom: 3px solid #4A6E7D; /* Verde azulado */
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-family: 'Merriweather', serif;
+            color: #A8765D; /* Marrón-rojizo */
+            border-bottom: 2px solid #C4A28A; /* Marrón claro */
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        ul {
+            color: #333;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-left: 25px;
+            list-style: disc;
+        }
+
+        ul li strong {
+            color: #2E4057; /* Azul oscuro */
+        }
+
+        article {
+            margin-top: 25px;
+        }
+
+        /* Galerías de imágenes dentro de las secciones */
+        .section-gallery {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .section-gallery figure {
+            max-width: 300px;
+            text-align: center;
+            background: #fdfdfd;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .section-gallery figure:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .section-gallery figcaption {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 0.95rem;
+            color: #555;
+            background-color: #F0F0F0; /* Fondo más claro para caption */
+            border-top: 1px solid #E0E0E0;
+        }
+
+        /* Estilos específicos para secciones con la nueva paleta */
+        #medio-natural h2, #medio-natural h3 { color: #2E4057; border-color: #4A6E7D; }
+        #medio-natural ul li strong { color: #2E4057; }
+
+        #expansion-control h2, #expansion-control h3 { color: #A8765D; border-color: #C4A28A; }
+        #expansion-control p { color: #333; }
+
+        #subsistencia h2, #subsistencia h3 { color: #2E4057; border-color: #4A6E7D; }
+        #subsistencia p { color: #333; }
+
+        #estructura-social h2, #estructura-social h3 { color: #A8765D; border-color: #C4A28A; }
+        #estructura-social p { color: #333; }
+
+        #religion h2, #religion h3 { color: #2E4057; border-color: #4A6E7D; }
+        #religion p { color: #333; }
+
+        #conocimientos h2, #conocimientos h3 { color: #A8765D; border-color: #C4A28A; }
+        #conocimientos p { color: #333; }
+
+        #conflictos h2, #conflictos h3 { color: #2E4057; border-color: #4A6E7D; }
+        #conflictos p { color: #333; }
+        #conflictos .section-gallery figcaption { color: #555; }
+
+        /* Estilos para la sección de Galería Principal */
+        #galeria-principal h2 {
+            color: #4A6E7D; /* Verde azulado */
+            border-color: #7CA0A0; /* Azul grisáceo claro */
+        }
+        #galeria-principal .section-gallery figure figcaption {
+            color: #2E4057; /* Color de texto que combine */
+            background-color: #E8D3C0; /* Beige claro */
+            border-top: 1px solid #C4A28A;
+        }
+
+        /* Estilos para el video */
+        .video-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .video-container video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container figcaption {
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: #555;
+            text-align: center;
+        }
+
+        /* Botón de Regresar al Inicio */
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #F0B46A; /* Naranja-dorado */
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background-color: #A8765D; /* Marrón-rojizo al pasar el mouse */
+            transform: translateY(-3px);
+        }
+
+        /* Media Queries para diseño responsivo */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            h2 {
+                font-size: 1.7rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            p, ul {
+                font-size: 1rem;
+            }
+
+            .section-gallery figure {
+                max-width: 100%;
+            }
+
+            .back-to-top {
+                padding: 12px 15px;
+                font-size: 1rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+            .team-info-bar span {
+                animation: scroll-left 15s linear infinite; /* Animación más rápida en móvil */
+            }
+        }
+
+        footer {
+            background-color: #2E4057; /* Azul oscuro */
+            color: #7CA0A0; /* Azul grisáceo claro */
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer a {
+            color: #F0B46A; /* Naranja-dorado para el enlace */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="top">
+        <h1>Los Mixtecos: Cultura y Legado de la Tierra de la Lluvia</h1>
+        <p>Explora la riqueza del pueblo mixteco, una civilización mesoamericana que floreció en el actual estado de Oaxaca, México.</p>
+        <div class="team-info-bar">
+            <span>Equipo 6 | Integrantes: Ramírez Villegas Diana Paola, Villegas Camacho Nataly Estefania, Cruz Rodríguez Aldo Israel, Reyes Heriquez Noe Fernando, Ortega Parra Luis Alberto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#medio-natural">Medio Natural</a></li>
+            <li><a href="#expansion-control">Expansión y Control</a></li>
+            <li><a href="#subsistencia">Subsistencia</a></li>
+            <li><a href="#estructura-social">Estructura Social</a></li>
+            <li><a href="#religion">Religión y Magia</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
+            <li><a href="#conflictos">Conflictos Bélicos</a></li>
+            <li><a href="#galeria-principal">Galería Completa</a></li>
+            <li><a href="#video-cultura-mixteca">Video</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section id="medio-natural">
+            <h2>Medio Natural</h2>
+            <p>
+                Los mixtecos habitaron una región geográficamente diversa conocida como La Mixteca, que se extiende por los estados actuales de Oaxaca, Guerrero y Puebla. Esta región se divide en tres zonas principales: la **Mixteca Alta**, la **Mixteca Baja** y la **Mixteca de la Costa**. Cada una presentaba características climáticas, topográficas y ecológicas distintas, que influyeron en el estilo de vida y desarrollo cultural de los mixtecos.
+            </p>
+            <ul>
+                <li>**Mixteca Alta:** Ubicada en las zonas montañosas, con climas templados y suelos erosionados. Los mixtecos desarrollaron sistemas de terrazas agrícolas para cultivar maíz, frijol y calabaza. Estas técnicas permitían retener el agua y evitar el desgaste del terreno.</li>
+                <li>**Mixteca Baja:** Zona semiárida, con climas cálidos y secos. La agricultura era más difícil, por lo que los mixtecos practicaban también la recolección de frutos silvestres y el comercio con regiones más fértiles.</li>
+                <li>**Mixteca de la Costa:** Presentaba un clima tropical y acceso al océano Pacífico. Se explotaban recursos marinos como pescado, moluscos y sal, y se cultivaban productos como cacao y algodón.</li>
+                <li>**Recursos Naturales:** Disponían de materiales como obsidiana, jade, barro y piedra caliza. También obtenían tintes naturales como la cochinilla.</li>
+                <li>**Importancia cultural:** El paisaje influía en la religión y cosmovisión. Las montañas eran sagradas y se les atribuía el poder de los dioses. Las cuevas eran utilizadas para rituales y ofrendas.</li>
+            </ul>
+        </section>
+
+        <section id="expansion-control">
+            <h2>Expansión y Control de los Valles Centrales</h2>
+            <p>
+                En el año 900 d.C., la influencia mixteca llega a los Valles Centrales a través de la conquista. Un hecho decisivo fue el sometimiento de la ciudad de **Zaachila**, que tras la caída de Monte Albán controlaba la política regional. El Señor zapoteca buscó refugio en Tehuantepec, intentando sin éxito conservar el control político de los valles. A partir de esta conquista, los mixtecos extendieron su poder sometiendo a poblaciones zapotecas y dominando la parte occidental del Valle, estableciendo su centro político en **Cuilapan**.
+            </p>
+            <p>
+                La expansión mixteca se dio mediante desplazamiento del gobernante zapoteco y la formación de **alianzas matrimoniales**. Desde Achiutla y Tilantongo, los mixtecos sojuzgaron pueblos menores, formando sus primeros señoríos y extendiéndose por el noroeste y suroeste de Oaxaca, hasta la costa del Pacífico. La *Relación de Cuilapan* establece la entrada mixteca a los Valles Centrales en el año 1280 d.C.
+            </p>
+
+            <h3>Materiales Sagrados: Obsidiana y Jade</h3>
+            <p>
+                **Obsidiana:** Piedra volcánica que se obtenía por comercio con el Centro de México, muy apreciada en la elaboración de navajillas para autosacrificio a los dioses, orejeras, bezotes y cuentas. Se asociaba con el dios *Yaa Inu Chu ma*, patrono de la noche.
+            </p>
+            <p>
+                **Jade:** Piedra sagrada con profundo simbolismo en Mesoamérica, incluyendo nefrita y jadeíta. Asociada a los dioses del agua y la fecundidad, su nombre en mixteco es *Yunn duta* o *Yunn tatna*.
+            </p>
+        </section>
+
+        <section id="subsistencia">
+            <h2>Formas de Subsistencia</h2>
+            <p>
+                La economía mixteca estuvo basada principalmente en la **agricultura**, la **ganadería** y el **comercio**, que se adaptaron al entorno geográfico y climático diverso de la región. La combinación de estas actividades permitió a los mixtecos desarrollar sociedades complejas y mantener relaciones comerciales con otras culturas mesoamericanas.
+            </p>
+
+            <article>
+                <h3>Agricultura y Técnicas de Cultivo</h3>
+                <p>
+                    La agricultura fue la base principal de la subsistencia mixteca. Aprovecharon las tierras montañosas mediante el uso de **terrazas**, que permitían conservar la humedad y evitar la erosión. Cultivaban principalmente maíz, frijol, calabaza y chile, que eran esenciales para su dieta. Además, utilizaban sistemas de riego para aumentar la productividad en zonas semiáridas.
+                </p>
+                <p>
+                    Los agricultores también aprovechaban los ciclos naturales y los conocimientos astronómicos para determinar las mejores fechas para sembrar y cosechar, lo que evidencia un conocimiento avanzado del medio natural.
+                </p>
+            </article>
+
+            <article>
+                <h3>Ganadería y Aprovechamiento Animal</h3>
+                <p>
+                    Aunque la ganadería no fue tan predominante como la agricultura, los mixtecos domesticaron animales como el **perro** y el **pavo**, que tenían usos tanto alimenticios como ceremoniales. Estos animales también participaban en la vida social y ritual, siendo parte de ofrendas y sacrificios.
+                </p>
+            </article>
+
+            <article>
+                <h3>Comercio e Intercambio</h3>
+                <p>
+                    El comercio fue una actividad crucial para los mixtecos, quienes mantenían rutas que conectaban la Mixteca con regiones como el Valle de México, la Costa del Pacífico y el Altiplano Central. Intercambiaban productos agrícolas, materias primas, productos artesanales y bienes de lujo como el **jade**, la **obsidiana** y la **grana cochinilla**.
+                </p>
+                <p>
+                    Los mercados eran espacios importantes de interacción social y económica, donde también se realizaban intercambios culturales y rituales. Las caravanas comerciales estaban protegidas y organizadas por señoríos poderosos, que obtenían beneficios económicos y políticos.
+                </p>
+            </article>
+
+            <article>
+                <h3>Otras Actividades de Subsistencia</h3>
+                <p>
+                    Además de la agricultura y el comercio, los mixtecos se dedicaron a la recolección de frutos silvestres, la pesca en la región costera y la producción artesanal. Destacaron en la elaboración de **cerámica, tejidos y orfebrería**, lo cual también generaba productos para el comercio.
+                </p>
+            </article>
+        </section>
+
+        <section id="estructura-social">
+            <h2>Estructura Social y Política</h2>
+            <p>
+                La sociedad mixteca estaba organizada en una estructura jerárquica compleja, donde el poder político y social se concentraba en los **linajes nobiliarios** y los señores regionales, quienes controlaban tanto la administración como los recursos económicos y religiosos.
+            </p>
+
+            <article>
+                <h3>Nobleza y Gobernantes</h3>
+                <p>
+                    La nobleza mixteca estaba conformada por familias poderosas que poseían tierras, templos y controlaban el comercio. El máximo representante político era el **señor**, conocido como "Yya Nacuaa", que dirigía las decisiones militares, religiosas y civiles en su señorío.
+                </p>
+                <p>
+                    Los señores ejercían su poder mediante alianzas matrimoniales y guerras para expandir su influencia territorial, además de patrocinar artes y cultura para legitimar su autoridad.
+                </p>
+            </article>
+
+            <article>
+                <h3>Clases Sociales y Roles</h3>
+                <p>
+                    La sociedad mixteca estaba dividida en **nobles, plebeyos y esclavos**. Los nobles disfrutaban de privilegios y tenían acceso a la educación y el poder político. Los plebeyos eran agricultores, artesanos y comerciantes que sostenían la economía. Los esclavos, aunque en menor número, cumplían tareas domésticas y trabajos forzados.
+                </p>
+            </article>
+
+            <article>
+                <h3>Organización Política</h3>
+                <p>
+                    La Mixteca estaba dividida en diversos **señoríos independientes**, cada uno gobernado por un linaje noble. No existió un estado unificado fuerte, sino una red de alianzas y rivalidades. Sin embargo, personajes como el señor **8 Venado** intentaron consolidar el poder y unificar a los mixtecos.
+                </p>
+            </article>
+        </section>
+
+        <section id="religion">
+            <h2>Religión, Dioses y Magia</h2>
+            <p>
+                La religión mixteca fue un aspecto central en la vida social y política. Sus creencias giraban en torno a un complejo panteón de dioses relacionados con la naturaleza, la fertilidad y la muerte. Para venerarlos, construyeron templos, adoratorios, cuevas y realizaron ceremonias en cumbres sagradas. Los ritos religiosos incluían autosacrificios, ofrendas y sacrificios humanos que buscaban mantener el equilibrio entre los hombres y las fuerzas divinas.
+            </p>
+
+            <article>
+                <h3>Santuarios y Lugares Sagrados</h3>
+                <p>
+                    Los principales santuarios mixtecos fueron **Apoala** al este, **Achiutla** en el centro y **Chalcaltongo** al sur. Apoala era el santuario principal donde se veneraba al ídolo *Coo Sau*, asociado con la serpiente emplumada. Cada región tenía su deidad especial, como Tilantongo con su dios *Ñuma Tnoo*. Estos lugares eran escenarios de festivales religiosos con danzas, comidas y rituales.
+                </p>
+            </article>
+
+            <article>
+                <h3>Rituales y Ofrendas</h3>
+                <p>
+                    Las ofrendas más valoradas incluían **copal, aves, sangre de autosacrificio y sacrificios humanos**. Los rituales eran largos, llenos de simbolismos y tenían como objetivo asegurar la fertilidad de la tierra, la prosperidad del pueblo y el equilibrio cósmico. Las fiestas religiosas podían durar varios días y eran acompañadas por música y baile.
+                </p>
+            </article>
+
+            <article>
+                <h3>Magia y Creencias</h3>
+                <p>
+                    La magia formaba parte de las creencias religiosas. Los **sacerdotes y chamanes** tenían un papel fundamental como intermediarios entre el mundo divino y los humanos. Se practicaban rituales de curación, adivinación y protección que involucraban cantos, uso de plantas medicinales y símbolos sagrados.
+                </p>
+            </article>
+        </section>
+
+        <section id="conocimientos">
+            <h2>Conocimientos: Matemáticas, Herbolaria y Escritura</h2>
+            <p>
+                Los mixtecos desarrollaron importantes conocimientos en diversas áreas que reflejan su avanzada civilización y su relación estrecha con el entorno natural.
+            </p>
+
+            <article>
+                <h3>Matemáticas y Calendarios</h3>
+                <p>
+                    Los mixtecos usaban sistemas matemáticos basados en la **numeración vigesimal** (de base 20), que les permitía contar, medir y registrar con gran precisión el tiempo y las cantidades. Esta habilidad matemática era fundamental para elaborar sus calendarios rituales y agrícolas, que regulaban las actividades religiosas y productivas. Utilizaban signos y símbolos para representar números y fechas, integrados en códices y monumentos.
+                </p>
+            </article>
+
+            <article>
+                <h3>Herbolaria y Medicina Tradicional</h3>
+                <p>
+                    La **herbolaria** fue una práctica esencial para la salud de la comunidad mixteca. Conocían numerosas plantas medicinales y sus propiedades curativas, empleadas en rituales y tratamientos médicos. Los chamanes y curanderos utilizaban infusiones, ungüentos y baños con plantas para sanar enfermedades físicas y espirituales, basándose en un profundo respeto por la naturaleza y su equilibrio.
+                </p>
+            </article>
+
+            <article>
+                <h3>Escritura y Códices</h3>
+                <p>
+                    Los mixtecos desarrollaron un sistema de **escritura pictográfica y jeroglífica** que plasmaban en códices, conocidos como *naandeye* o *tonindeye*, que significan “historia de los linajes”. Otro término era *ñee ñuhu*, “piel sagrada” o “piel de dios”. La mayoría de los códices prehispánicos proceden de la Mixteca Alta y fueron pintados sobre piel de venado y tratados con cal. Los escribanos, llamados *tay huisi tacu*, tenían una formación especial para combinar arte, rituales y conocimiento calendárico, asegurando la transmisión cultural.
+                </p>
+            </article>
+        </section>
+
+        <section id="conflictos">
+            <h2>Conflictos Bélicos</h2>
+            <p>
+                La historia mixteca estuvo marcada por numerosos **conflictos bélicos** que definieron el poder y la expansión territorial de esta cultura en la región de Oaxaca y sus alrededores. La guerra era una parte esencial no solo para la defensa de sus señoríos sino también para la obtención de recursos y prestigio social.
+            </p>
+
+            <article>
+                <h3>Guerras de Expansión y Control</h3>
+                <p>
+                    Los mixtecos extendieron su dominio mediante campañas militares que sometieron a diversas poblaciones vecinas, principalmente zapotecas, como ocurrió en la conquista de los Valles Centrales. Estas campañas estaban organizadas y dirigidas por señores guerreros, como el famoso **8 Venado Garra de Jaguar**, quien buscó unificar a los mixtecos bajo un solo mando.
+                </p>
+            </article>
+
+            <article>
+                <h3>La Guerra y el Ritual</h3>
+                <p>
+                    La guerra no solo tenía un carácter material, sino también espiritual. Los guerreros realizaban autosacrificios y ofrendas para ganar el favor de sus dioses. La captura de prisioneros era un objetivo clave para los **sacrificios rituales**, elemento fundamental para mantener el equilibrio cósmico según la cosmovisión mixteca.
+                </p>
+            </article>
+
+            <article>
+                <h3>Conflictos Internos y Alianzas</h3>
+                <p>
+                    Además de las guerras externas, los mixtecos enfrentaron conflictos internos entre diversos señoríos. Para fortalecer su poder, frecuentemente establecían **alianzas matrimoniales y pactos políticos**. Estas estrategias eran esenciales para mantener la cohesión y evitar la fragmentación territorial.
+                </p>
+            </article>
+        </section>
+
+        ---
+
+        <section id="galeria-principal">
+            <h2>Galería de Imágenes de la Cultura Mixteca</h2>
+            <p>
+                Descubre visualmente la rica herencia de los mixtecos a través de estas imágenes representativas de su medio natural, vida social, arte y conocimientos.
+            </p>
+            <div class="section-gallery">
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.47.18 PM.jpeg" alt="Mapa de la Zona Mixteca">
+                    <figcaption>Mapa que muestra la distribución de las subregiones mixtecas.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.48.05 PM.jpeg" alt="Códice Mixteco">
+                    <figcaption>Fragmento de un códice mixteco con escritura pictográfica.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.29.48 PM.jpeg" alt="Cerámica Mixteca">
+                    <figcaption>Ejemplos de cerámica mixteca, mostrando formas y estilos.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.47.46 PM.jpeg" alt="Orfebrería Mixteca">
+                    <figcaption>Orfebrería mixteca con joyas y adornos de oro.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.45.25 PM.jpeg" alt="Códice de 8 Venado">
+                    <figcaption>Representación del Señor 8 Venado Garra de Jaguar y sus conquistas.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.36.05 PM.jpeg" alt="Objetos arqueológicos">
+                    <figcaption>Diversos objetos arqueológicos relacionados con la cultura mixteca.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.53.58 PM.jpeg" alt="Metalurgia Mixteca">
+                    <figcaption>Exhibición de artefactos de metalurgia mixteca.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.34.04 PM.jpeg" alt="Texto sobre Invasión Mexica">
+                    <figcaption>Texto e ilustración sobre un pasaje histórico, posiblemente la invasión mexica.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.29.34 PM.jpeg" alt="Maqueta de sitio arqueológico">
+                    <figcaption>Maqueta de un sitio arqueológico Mixteco, Yagul.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.29.30 PM.jpeg" alt="Maqueta de sitio arqueológico">
+                    <figcaption>Maqueta de un sitio arqueológico Mixteco.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.56.14 PM (3).jpeg" alt="Cronología de colecciones arqueológicas">
+                    <figcaption>Cronología de fases arqueológicas de Mixtecos.</figcaption>
+                </figure>
+                <figure>
+                    <img src="WhatsApp Image 2025-05-27 at 6.56.14 PM (1).jpeg" alt="Obsidiana y Jade">
+                    <figcaption>Exhibición de obsidiana y jade, materiales sagrados Mixtecos.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="video-cultura-mixteca">
+            <h2>Video: CULTURA MIXTECA 4o. GRADO</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="CULTURA MIXTECA 4o. GRADO.mp4" type="video/mp4">
+                </video>
+                <figcaption>Video educativo sobre la Cultura Mixteca para cuarto grado.</figcaption>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Explorando la Cultura Mixteca. Todos los derechos reservados.</p>
+
+    <a href="#top" class="back-to-top" id="btnBackToTop">↑ Inicio</a>
+
+    <script>
+        // Lógica para mostrar/ocultar el botón "Regresar al Inicio"
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            const btnBackToTop = document.getElementById("btnBackToTop");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btnBackToTop.style.display = "block";
+            } else {
+                btnBackToTop.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
